@@ -35,10 +35,10 @@ const StyledWrapper = styled.div`
   }
 
   .type1::after {
-    content: "🫡";
+    content: "❤️";
     height: 50px;
     width: 150px;
-    background-color: #008080;
+    background-color: rgb(22 163 74 );
     color: #fff;
     position: absolute;
     top: 0%;

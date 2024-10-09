@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
+
 const Register = () => {
   // State to hold form data
   const [formData, setFormData] = useState({
@@ -27,6 +28,11 @@ const Register = () => {
   };
 
   return (
+   
+
+
+
+
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
@@ -117,6 +123,8 @@ const Register = () => {
       </div>
     </div>
   );
+
+
 };
 
 export default Register;

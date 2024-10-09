@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../Useables/Button';
 import styled from 'styled-components';
+import Card from '../Useables/Card';
+import Card2 from '../Useables/Card2';
 
 const HeroSection = () => {
   return (
@@ -35,23 +37,44 @@ const HeroSection = () => {
 
       {/* "What is ShareBite?" Section */}
       <div id="about" className="w-full bg-white py-16 px-4 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 text-center">
-          What is ShareBite?
-        </h2>
-        <p className="text-lg md:text-xl text-gray-700 text-center max-w-3xl mx-auto">
-          ShareBite is a platform that connects people with excess food to those in need. Our goal is to reduce food wastage in Mumbai while helping communities fight hunger. By leveraging technology and existing delivery networks, we create a seamless donation process that benefits everyone.
-        </p>
-      </div>
+  <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+    {/* Text Section */}
+    <div className=" pl-12 flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0">
+      <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 text-center md:text-left">
+        What is ShareBite?
+      </h2>
+      <p className="text-lg md:text-xl text-gray-700 text-centre md:text-justify max-w-3xl mx-auto">
+      ShareBite is an innovative platform dedicated to bridging the gap between food surplus and food scarcity in Mumbai. Our mission is to combat food wastage while nourishing those in need within the community. By harnessing cutting-edge technology and collaborating with established delivery networks, ShareBite simplifies the food donation process, making it accessible and efficient for everyone involved. We connect individuals and organizations with excess food to local charities and shelters, ensuring that nutritious meals reach vulnerable populations. Through our commitment to sustainability and community well-being, ShareBite strives to create a positive impact, fostering a culture of generosity and collaboration in the fight against hunger.
+      </p>
+    </div>
+    {/* Card Section */}
+    <div className="flex-1 flex justify-center">
+      <Card />
+    </div>
+  </div>
+</div>
+
+
 
       {/* "How It Helps?" Section */}
-      <div id="impact" className="w-full bg-green-50 py-16 px-4 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 text-center">
-          How It Helps?
-        </h2>
-        <p className="text-lg md:text-xl text-gray-700 text-center max-w-3xl mx-auto">
-          Our platform makes it easy for residents to donate food with just a few clicks. We use the existing infrastructure of delivery partners to collect and redistribute food efficiently, ensuring that the food reaches those in need quickly and safely.
-        </p>
-      </div>
+      <div id="impact" className="w-full bg-white py-16 px-4 md:px-8">
+  <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+    {/* Text Section */}
+    <div className="flex-1 flex justify-center">
+      <Card2 />
+    </div>
+    {/* Card Section */}
+    <div className=" pr-12 flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0">
+      <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-4 text-center md:text-left">
+        How It Helps?
+      </h2>
+      <p className="text-lg md:text-xl text-gray-700 text-center md:text-justify max-w-3xl mx-auto">
+      ShareBite tackles food wastage and hunger by enabling a seamless food donation process. Our platform connects individuals and businesses with excess food to local distribution points and charities, ensuring that surplus food reaches those in need. By leveraging technology and existing delivery networks, ShareBite fosters community engagement and social responsibility, transforming food waste into a valuable resource for the underprivileged. Participating in ShareBite empowers users to make a meaningful difference in reducing food insecurity in Mumbai, creating a more compassionate and sustainable future for all.
+      </p>
+    </div>
+   
+  </div>
+</div>
 
       {/* Additional Sections or Footer can be added here */}
     </div>
