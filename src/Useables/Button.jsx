@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import FoodCart from "../Components/FoodCart";
 
 
 const Button = () => {
@@ -8,7 +9,7 @@ const Button = () => {
 
   // Function to handle navigation
   const handleDonateClick = () => {
-    navigate('/donatefood');
+    navigate('/foodcart');
   };
 
   return (

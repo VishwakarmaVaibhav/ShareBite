@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../Useables/Button';
 import Scroll from '../Useables/Scroll'; // Import the Scroll component
 import { FaArrowUp } from "react-icons/fa";
+import FoodCart from './FoodCart';
 import styled from 'styled-components';
 import Card from '../Useables/Card';
 import Card2 from '../Useables/Card2';

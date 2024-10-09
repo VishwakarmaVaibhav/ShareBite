@@ -4,12 +4,13 @@ import { Route, Routes } from "react-router-dom";
 import Root from './Components/Root';
 import Login from './Components/Login'
 import Navbar from './Components/Navbar'
-import Donatefood from './Components/Donatefood'
+
 import HeroSection from './Components/HeroSection'
 import Register from './Components/Register'
 import Footer from './Components/Footer'
 import Button from './Useables/Button'  
 import styled from 'styled-components'
+import FoodCart from './Components/FoodCart';
 
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
           <Route path="/" element={<Root />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
-          <Route path="/donatefood" element={<Donatefood />} />
+          <Route path="/foodcart" element={<FoodCart />} />
           
 
 

@@ -28,12 +28,9 @@ const Card = () => {
             </svg>
           </div>
           <div className="content">
-            <p className="heading">Card Hover</p>
+            <p className="heading"></p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              tristique lectus. Nullam vel orci in mauris sollicitudin
-              consectetur. Sed vel tristique lectus. Nullam vel orci in mauris
-              sollicitudin consectetur.
+            Sharing food is sharing love; let’s nourish our community together!
             </p>
           </div>
         </div>

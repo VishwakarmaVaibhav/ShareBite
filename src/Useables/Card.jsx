@@ -28,12 +28,9 @@ const Card = () => {
             </svg>
           </div>
           <div className="content">
-            <p className="heading">Card Hover</p>
+            <p className="heading"></p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              tristique lectus. Nullam vel orci in mauris sollicitudin
-              consectetur. Sed vel tristique lectus. Nullam vel orci in mauris
-              sollicitudin consectetur.
+            "Every meal donated is a seed of kindness planted in the heart of someone in need."
             </p>
           </div>
         </div>
