@@ -3,10 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-
-
-
-
 const Login = () => {
   // State for managing form inputs
   const [email, setEmail] = useState('');
@@ -31,8 +27,17 @@ const Login = () => {
       <Navbar />
 
       {/* Login Form */}
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+      <div className="relative flex items-center justify-center min-h-screen bg-gray-100">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/src/assets/LoginBG.jpeg" // Replace with your background image path
+            alt="Background"
+            className="w-full h-full object-cover opacity-50"
+          />
+        </div>
+
+        <div className="relative w-full max-w-md p-8 bg-white rounded-lg shadow-lg shadow-md transform transition-transform duration-300 hover:shadow-2xl hover:-translate-y-1">
           <h2 className="text-2xl font-bold text-center text-green-600">Login to ShareBite</h2>
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div>

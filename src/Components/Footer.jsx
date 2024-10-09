@@ -28,11 +28,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#hero" className="hover:text-green-400 transition duration-300">
-                  Hero Section
-                </a>
-              </li>
-              <li>
                 <a href="#about" className="hover:text-green-400 transition duration-300">
                   What is ShareBite?
                 </a>
@@ -42,20 +37,15 @@ const Footer = () => {
                   How It Helps
                 </a>
               </li>
-              <li>
-                <a href="#contact" className="hover:text-green-400 transition duration-300">
-                  Contact Us
-                </a>
-              </li>
             </ul>
           </div>
 
           {/* Social Media Section */}
           <div>
             <h2 className="text-xl font-bold mb-4">Follow Us</h2>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
-                Facebook
+            <div className="flex space-x-4 mb-4">
+              <a href="https://github.com/VishwakarmaVaibhav/ShareBite/tree/main" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
+                GitHub
               </a>
               <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
                 Twitter
@@ -67,6 +57,45 @@ const Footer = () => {
                 LinkedIn
               </a>
             </div>
+            <div>
+                <p className="text-sm text-gray-500 font-bold mb-4">ShareBite is a non-profit organization.</p>
+               
+            </div>
+            <div>
+            <h2 className="text-xl font-bold mb-4">Contact Us</h2>
+            </div>
+
+            
+                <div>
+                <a href="vaibhav.p.vishwakarma@slrtce.in" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
+                vaibhav.p.vishwakarma@slrtce.in
+              </a>
+                </div>
+                <div>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
+                sourav.b.sarkar@slrtce.in
+              </a>
+                </div>
+                <div>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
+                bhaskar.j.tripathi@slrtce.in
+              </a>
+                </div>
+                <div>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
+                abdulmohseen.m.khan@slrtce.in
+              </a>
+                </div>
+                <div>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition duration-300">
+                priya.g.gupta@slrtce.in
+              </a>
+                </div>
+            
+              
+
+            
+            
           </div>
         </div>
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Card = () => {
@@ -8,6 +7,12 @@ const Card = () => {
       <div className="card-container">
         <div className="card">
           <div className="img-content">
+            {/* Image directly in the card */}
+            <img
+              src="/src/assets/Point.jpeg" // Ensure this path is correct relative to your project structure
+              alt="Card Image"
+              className="card-image"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -25,10 +30,10 @@ const Card = () => {
           <div className="content">
             <p className="heading">Card Hover</p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                tristique lectus. Nullam vel orci in mauris sollicitudin
-                consectetur. Sed vel tristique lectus. Nullam vel orci in mauris
-                sollicitudin consectetur.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+              tristique lectus. Nullam vel orci in mauris sollicitudin
+              consectetur. Sed vel tristique lectus. Nullam vel orci in mauris
+              sollicitudin consectetur.
             </p>
           </div>
         </div>
@@ -39,88 +44,88 @@ const Card = () => {
 
 const StyledWrapper = styled.div`
   .card-container {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 10px;
-}
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    overflow: hidden; /* Ensure no overflow from rounded corners */
+  }
 
-.card-container::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(20px);
-}
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: relative; /* Position relative for absolutely positioned elements */
+    overflow: hidden; /* Prevent overflowing of child elements */
+  }
 
-.card {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  overflow: hidden;
-}
+  .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Make sure the svg is positioned correctly */
+    transition: scale 0.6s, rotate 0.6s, filter 1s;
+  }
 
-.card .img-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-  transition: scale 0.6s, rotate 0.6s, filter 1s;
-}
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole card */
+    filter: blur(0); /* No blur for the image */
+    transition: filter 0.6s; /* Smooth transition for filter effects */
+  }
 
-.card .img-content svg {
-  width: 50px;
-  height: 50px;
-  fill: #e8e8e8;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
+  .card .img-content svg {
+    width: 50px;
+    height: 50px;
+    fill: #e8e8e8;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    position: absolute; /* Positioning the SVG on top of the image */
+    z-index: 1; /* Bring it above the image */
+  }
 
-.card .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 10px;
-  color: #e8e8e8;
-  padding: 20px;
-  line-height: 1.5;
-  border-radius: 5px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(50px);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
+  .card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
 
-.card .content .heading {
-  font-size: 32px;
-  font-weight: 700;
-}
+  .card .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+  }
 
-.card:hover .content {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-.card:hover .img-content {
-  scale: 2.5;
-  rotate: 30deg;
-  filter: blur(7px);
-}
+  .card:hover .img-content .card-image {
+    filter: blur(5px); /* Optional blur effect on hover */
+  }
 
-.card:hover .img-content svg {
-  fill: transparent;
-}
-
+  .card:hover .img-content svg {
+    fill: transparent;
+  }
 `;
 
 export default Card;

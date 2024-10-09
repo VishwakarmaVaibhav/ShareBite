@@ -1,6 +1,8 @@
 import React , { useState } from'react'
 import { BrowserRouter, useNavigate } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Donatefood = () => {
  // State to hold form data
@@ -29,7 +31,9 @@ const Donatefood = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <>
+    <Navbar />
+     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center mb-6">Donate Food</h2>
         <form onSubmit={handleSubmit}>
@@ -138,6 +142,10 @@ const Donatefood = () => {
         </form>
       </div>
     </div>
+
+    <Footer />
+    </>
+   
   );
 };
 
