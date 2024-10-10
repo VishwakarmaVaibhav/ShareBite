@@ -22,9 +22,14 @@ const Register = () => {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData); // Replace this with your form submission logic
+    try {
+      const response = await axios.post("http://localhost:5000/submit-form", formData);
+      console.log(response.data); // Success message from server
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (

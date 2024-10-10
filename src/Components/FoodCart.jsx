@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Delivery from "./Delievery";
+import Buttona from "../Useables/Buttona";
 
 const FoodCart = () => {
   const [vegQuantity, setVegQuantity] = useState(1);
   const [nonVegQuantity, setNonVegQuantity] = useState(1);
   const [isVegFresh, setIsVegFresh] = useState(false);
   const [isNonVegFresh, setIsNonVegFresh] = useState(false);
-  const [address, setAddress] = useState("242 ST Marks Eve, Finland");
+  const [address, setAddress] = useState("SLRTCE, Lab 311 ");
   const [pointsFromItems, setPointsFromItems] = useState(20);
   const [totalPoints, setTotalPoints] = useState(30);
+  
+  
 
   const handleVegQuantityChange = (operation) => {
     if (operation === "increment") {
@@ -50,7 +54,7 @@ const FoodCart = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow flex justify-center items-center bg-gray-50 py-12">
+      <div className="flex-grow flex justify-center items-center bg-gray-50 py-20 shadow-black-900">
         <div className="bg-white rounded-3xl shadow-lg p-8 w-full max-w-xl">
           <h1 className="text-2xl font-bold mb-6">Your Food Cart</h1>
           <div className="bg-pink-100 rounded-lg p-4 mb-6 shadow-md">
@@ -142,6 +146,11 @@ const FoodCart = () => {
               </div>
             </div>
           </div>
+          <div className="bg-white-100 rounded-lg p-4 mb-6 shadow-sm">
+          <span className="font-bold text-black pr-40 ">Delivery Charges</span>
+          <span className="font-bold text-black p-0 mr-0 ">₹15</span>
+
+          </div>
 
           <div className="bg-blue-100 rounded-lg p-4 mb-6 shadow-sm">
             <p>Each item gives 10 points</p>
@@ -162,9 +171,10 @@ const FoodCart = () => {
             </div>
           </div>
 
-          <button className="bg-purple-500 text-white rounded-full py-3 w-full font-bold shadow-md hover:bg-purple-600">
-            Proceed to Donate
-          </button>
+          <Buttona />
+
+
+          
         </div>
       </div>
       <Footer />
