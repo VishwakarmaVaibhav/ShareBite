@@ -54,7 +54,7 @@ const FoodCart = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow flex justify-center items-center bg-gray-50 py-20 shadow-black-900">
+      <div className="flex-grow flex justify-center items-center bg-gray-50 py-2 shadow-black-900">
         <div className="bg-white rounded-3xl shadow-lg p-8 w-full max-w-xl">
           <h1 className="text-2xl font-bold mb-6">Your Food Cart</h1>
           <div className="bg-pink-100 rounded-lg p-4 mb-6 shadow-md">

@@ -31,7 +31,7 @@ const Login = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/src/assets/LoginBG.jpeg" // Replace with your background image path
+            src="https://img.freepik.com/free-vector/charity-doodle-vector-background-donation-concept_53876-143434.jpg?t=st=1728577108~exp=1728580708~hmac=0cbfd7ff7cad3a9dca2f31bd71ce4ba7538b48fe95530d2dec1d560f82085b7b&w=1800" // Replace with your background image path
             alt="Background"
             className="w-full h-full object-cover opacity-50"
           />

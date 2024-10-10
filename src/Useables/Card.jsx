@@ -9,7 +9,7 @@ const Card = () => {
           <div className="img-content">
             {/* Image directly in the card */}
             <img
-              src="/src/assets/Point.jpeg" // Ensure this path is correct relative to your project structure
+              src="https://img.freepik.com/free-photo/portrait-indian-man-with-beverage_23-2150913300.jpg?t=st=1728578784~exp=1728582384~hmac=4051f65ee3f987f5b149d7de198bf46dab96805356811e93638ff38d78d0710f&w=1060" // Ensure this path is correct relative to your project structure
               alt="Card Image"
               className="card-image"
             />
